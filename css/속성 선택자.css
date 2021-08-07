@@ -1,0 +1,25 @@
+
+.bttr[id]{
+    color: red;
+}
+[type="password"]{
+    background-color: red;
+}
+[class^="a"]{
+    color: red;
+}
+[class$="k"]{
+    color: pink;
+}
+.bttr[id]{
+    color: red;
+}
+[type="password"]{
+    background-color: red;
+}
+[class^="a"]{
+    color: red;
+}
+[class$="k"]{
+    color: pink;
+}

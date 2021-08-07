@@ -1,0 +1,23 @@
+code{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+span#orange{
+    color: orange;
+}
+
+div>span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.div1 span{
+    color: red;
+}
+.bro1 + .bro2{
+    font-size: 10px;
+    color: blue;
+}
+.baseList~li{
+    color: orchid;
+}

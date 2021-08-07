@@ -1,0 +1,19 @@
+
+.divFamily0>div:nth-child(1){
+    font-size: 50px;
+}
+.divFamily1 > .divC:nth-child(2n){
+    font-size: 50px;
+}
+.divFamily2>div:nth-child(n+3){
+    color: palegreen;
+}
+.fruit p:nth-of-type(1){
+    color:darkturquoise;
+}
+.ulFruit .red:nth-of-type(1){
+    color: red;
+}
+.notLi li:not(.apple){
+    color: orange;
+}
