@@ -1,0 +1,11 @@
+.media{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (max-width:700px) {
+    .media{
+        background-color: red;
+    }
+}
