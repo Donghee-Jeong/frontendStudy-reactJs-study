@@ -1,0 +1,13 @@
+.float-left{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    text-align: center;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
