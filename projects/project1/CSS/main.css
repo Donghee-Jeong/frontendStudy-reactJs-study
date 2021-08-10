@@ -1,37 +1,87 @@
 body {
   margin: 0;
+  font-family: "Georama", sans-serif;
 }
-
-.container {
-  height: 70px;
-  background-color: black;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px;
+  background-color: black;
+  padding: 10px 10px;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar__logo {
+  color: white;
+  font-size: 20px;
+}
+.navbar__logo > i:hover {
+  animation: logo-rotate 1s linear infinite;
 }
 
-#icon {
-  width: 50px;
-}
-
-@keyframes iconRotate {
+@keyframes logo-rotate {
   to {
     transform: rotate(360deg);
   }
 }
 
-#icon:hover {
-  animation: iconRotate 2s linear infinite;
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.navbar__menu > li {
+  padding: 10px 10px;
+}
+.navbar__menu > li:hover {
+  background-color: slategray;
+  border-radius: 4px;
+}
+.navbar__icon {
+  display: flex;
+  padding-left: 0;
+}
+.navbar__icon > li {
+  padding: 10px 5px;
 }
 
-.nav-menu,
-.nav-userMenu {
-  color: white;
-  text-decoration: none;
-  margin: 0px 10px;
+.navbar__toggleBtn {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  display: none;
 }
-.nav-menu:hover,
-.nav-userMenu:hover {
-  background-color: gray;
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__icon {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    padding: 5px 0px;
+    margin: 5px 0px;
+  }
+  .navbar__toggleBtn {
+    display: block;
+  }
+  .navbar__menu.active {
+    display: flex;
+  }
+  .navbar__icon.active {
+    display: flex;
+  }
 }
